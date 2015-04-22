@@ -1,0 +1,7 @@
+﻿public enum JOB
+{
+	PROGRAMMER,
+	ARTIST,
+	MUSICIAN,
+	SCRUM_MASTER,
+}

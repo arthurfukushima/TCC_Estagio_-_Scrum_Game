@@ -2,7 +2,7 @@
 using System.Collections;
 using System.Collections.Generic;
 
-public class DialogBallonWindow : BaseWindow 
+public class ProjectIntroWindow : BaseWindow 
 {
 	public List<GameObject> ballons = new List<GameObject>();
 
@@ -52,6 +52,10 @@ public class DialogBallonWindow : BaseWindow
 			currentStep++;
 			ballons[currentStep].SetActive(true);
 		}
+		else
+		{
+			
+		}
 	}
 
 	private void OnClickPrevDialogButton()
@@ -62,7 +66,5 @@ public class DialogBallonWindow : BaseWindow
 			currentStep--;
 			ballons[currentStep].SetActive(true);
 		}
-
-
 	}
 }

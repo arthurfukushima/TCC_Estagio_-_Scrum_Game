@@ -36,7 +36,7 @@ public class DBStageInfos : MonoBehaviour
 	private void ReadStageInfoData()
 	{
 		stagesDictionary = new Dictionary<string, StageInfo>();
-
+	
 		//TODO : Read a XML with stage Info
 		foreach(StageInfo stage in stagesList)
 		{
