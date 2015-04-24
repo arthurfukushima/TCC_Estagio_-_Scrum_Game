@@ -1,4 +1,4 @@
-﻿using System.Xml;
+using System.Xml;
 using System.Xml.Serialization;
 
 [System.Serializable]
@@ -10,13 +10,13 @@ public class BaseTeamMember
 	public string memberDescription = "Doe";
 
 	[XmlAttribute("JOB")]
-	public JOB memberJob = JOB.PROGRAMMER;
+	public TASK_AREA memberJob;
 
 	public BaseTeamMember()
 	{
 	}
 
-	public BaseTeamMember(string pName, string pDescription, JOB pJob)
+	public BaseTeamMember(string pName, string pDescription, TASK_AREA pJob)
 	{
 		memberName = pName;
 		memberDescription = pDescription;

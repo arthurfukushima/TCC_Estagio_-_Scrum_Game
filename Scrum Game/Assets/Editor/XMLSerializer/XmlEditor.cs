@@ -28,7 +28,6 @@ public class XmlEditor : EditorWindow
 
 		if(GUILayout.Button("LOAD"))
 		{
-			data = "KA KSANGksangk";
 		}
 
 		GUILayout.Box(data);

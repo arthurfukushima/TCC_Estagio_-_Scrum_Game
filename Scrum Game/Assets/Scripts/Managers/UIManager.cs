@@ -86,7 +86,7 @@ public class UIManager : MonoBehaviour
 			return popups[pID];
 		else
 		{
-			DEBUG.LogError("Popup " + pID + " not found!");
+			DEBUG.LogError("Popup " + pID + " not found!", this);
 			return null;
 		}
 	}
@@ -116,7 +116,7 @@ public class UIManager : MonoBehaviour
 			return buttons[pID];
 		else
 		{
-			DEBUG.LogError("Button " + pID + " not found!");
+			DEBUG.LogError("Button " + pID + " not found!", this);
 			return null;
 		}
 	}

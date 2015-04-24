@@ -1,0 +1,6 @@
+﻿public enum TASK_AREA
+{
+	PROGRAMMING,
+	ART,
+	SOUND_DESIGN,
+}

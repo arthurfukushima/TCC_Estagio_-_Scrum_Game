@@ -8,7 +8,7 @@ public class XMLSerializer
 {
 	private static string path = Application.persistentDataPath;
 
-	public void Save<T>(string pXMLName = null)
+	public static void Save<T>(object pObject, string pXMLName)
 	{
 		if(string.IsNullOrEmpty(pXMLName))
 		{
@@ -21,7 +21,7 @@ public class XMLSerializer
 
 		using(var stream = new FileStream(completePath, FileMode.Create))
 		{
-			serializer.Serialize(stream, this);
+			serializer.Serialize(stream, pObject);
 		}
 	}
 

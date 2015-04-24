@@ -1,7 +1,7 @@
-﻿public enum JOB
+﻿public enum TASK_STATE
 {
-	PROGRAMMER,
-	ARTIST,
-	MUSICIAN,
-	SCRUM_MASTER,
+	TO_DO,
+	WIP,
+	TO_TEST,
+	COMPLETED
 }

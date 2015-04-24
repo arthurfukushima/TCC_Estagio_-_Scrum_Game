@@ -21,5 +21,6 @@ public class TeamMembersManager : MonoBehaviour
 	void Awake()
 	{
 		membersContainer = XMLSerializer.Load<TeamMembersContainer>("TeamMembers.xml");
+		Debug.Log("Load Members");
 	}
 }
